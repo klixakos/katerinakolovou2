@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Κατερίνα Κολοβού · Ψυχολόγος Παιδιών &amp; Εφήβων</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{/* ΧΡΩΜΑΤΑ / COLORS: αλλάξτε τους κωδικούς #... εδώ */--bg:#fbf8f5;--bg2:#eef3f0;--bg3:#f3eef4;--ink:#2f3a3a;--soft:#657270;--sage:#c9dccf;--rose:#f0d9d6;--lav:#ddd6ec;--sky:#d6e5ee;--accent:#5f8577;
+--serif:'Fraunces',Georgia,serif;--sans:'Inter',system-ui,-apple-system,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1f2523;--bg2:#252d2a;--bg3:#292630;--ink:#e9eeec;--soft:#a3b0ac;--sage:#3a4b42;--rose:#4a3b3b;--lav:#3d3852;--sky:#34444d;--accent:#9cc7b6}}
+:root[data-theme="dark"]{--bg:#1f2523;--bg2:#252d2a;--bg3:#292630;--ink:#e9eeec;--soft:#a3b0ac;--sage:#3a4b42;--rose:#4a3b3b;--lav:#3d3852;--sky:#34444d;--accent:#9cc7b6}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.75 var(--sans)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.2}
+a{color:inherit}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);z-index:5}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;max-width:1000px;margin:0 auto}
+.logo{font-family:var(--serif);font-size:1.15rem;text-decoration:none}
+nav ul{display:flex;gap:26px;list-style:none;padding:0;font-size:.92rem}
+nav ul a{text-decoration:none;color:var(--soft)}nav ul a:hover{color:var(--ink)}
+section{padding:96px 0}
+.hero{padding:80px 0 110px;position:relative;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.75;z-index:0}
+.b1{width:340px;height:340px;background:var(--lav);top:-60px;right:-60px}
+.b2{width:280px;height:280px;background:var(--sage);bottom:-80px;left:-40px}
+.b3{width:200px;height:200px;background:var(--rose);top:40%;right:25%}
+.hero .wrap{position:relative;z-index:1}
+.eyebrow{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:20px}
+h1{font-size:clamp(2.3rem,6vw,4rem);max-width:15ch;margin-bottom:24px}
+.lead{max-width:520px;color:var(--soft);font-size:1.1rem;margin-bottom:36px}
+.btn{display:inline-block;padding:14px 30px;border-radius:99px;background:var(--accent);color:var(--bg);text-decoration:none;font-weight:500;font-size:.95rem}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--soft);margin-left:10px}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:18px}
+.about{background:var(--bg2);display:grid}
+.grid2{display:grid;grid-template-columns:280px 1fr;gap:56px;align-items:center}
+.photo{position:relative;overflow:hidden;aspect-ratio:4/5;border-radius:140px 140px 24px 24px;background:linear-gradient(160deg,var(--rose),var(--lav));display:flex;align-items:center;justify-content:center;color:var(--soft);font-size:.85rem;text-align:center;padding:20px}
+.about p+p{margin-top:14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:40px}
+.card{padding:32px 28px;border-radius:24px}
+.card h3{font-size:1.25rem;margin-bottom:10px}
+.card p{color:var(--soft);font-size:.95rem;line-height:1.65}
+.c1{background:var(--sage)}.c2{background:var(--lav)}.c3{background:var(--sky)}.c4{background:var(--rose)}
+.card p{color:var(--ink);opacity:.8}
+.cred{background:var(--bg3)}
+.cred ul{list-style:none;padding:0;margin-top:26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px 40px}
+.cred li{padding-left:22px;position:relative;color:var(--soft)}
+.cred li::before{content:"";position:absolute;left:0;top:.7em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.contact{text-align:center}
+.contact p{max-width:480px;margin:0 auto 30px;color:var(--soft)}
+.info{margin-top:36px;font-size:.95rem;color:var(--soft)}
+footer{padding:32px 24px;text-align:center;font-size:.82rem;color:var(--soft);background:var(--bg2)}
+@media(max-width:720px){nav ul{display:none}.grid2{grid-template-columns:1fr;gap:32px}.photo{max-width:240px}section{padding:72px 0}.btn.ghost{margin:12px 0 0}}
+html[lang="el"] .en,html[lang="en"] .el{display:none}
+.lang{display:flex;gap:4px;font-size:.82rem}
+.lang button{border:1px solid transparent;background:none;color:var(--soft);padding:5px 11px;border-radius:99px;cursor:pointer;font:inherit}
+.lang button.on{background:var(--sage);color:var(--ink)}
+.right{display:flex;align-items:center;gap:26px}
+.cred h3{font-size:1.1rem;margin:34px 0 0;color:var(--accent)}.cred h3+ul{margin-top:14px}.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}</style>
+</head>
+<body>
+<header><nav><a class="logo" href="#top"><span class="el">Κατερίνα Κολοβού</span><span class="en">Katerina Kolovou</span></a><div class="right"><ul><li><a href="#about"><span class="el">Σχετικά</span><span class="en">About</span></a></li><li><a href="#services"><span class="el">Υποστήριξη</span><span class="en">Support</span></a></li><li><a href="#credentials"><span class="el">Προσόντα</span><span class="en">Credentials</span></a></li><li><a href="#contact"><span class="el">Επικοινωνία</span><span class="en">Contact</span></a></li></ul><div class="lang"><button data-l="el" class="on">ΕΛ</button><button data-l="en">EN</button></div></div></nav></header>
+
+<main id="top">
+<section class="hero">
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<div class="wrap">
+<p class="eyebrow"><span class="el">Ψυχολόγος Παιδιών &amp; Εφήβων · Συστημική Οικογενειακή Ψυχοθεραπεύτρια</span><span class="en">Child &amp; Adolescent Psychologist · Family &amp; Systemic Psychotherapist</span></p>
+<h1><span class="el">Ένας ήρεμος χώρος για παιδιά, εφήβους και οικογένειες.</span><span class="en">A calm space for children, teens and families.</span></h1>
+<p class="lead"><span class="el">Ψυχολογική στήριξη και συστημική ψυχοθεραπεία με ζεστασιά, σεβασμό και κατανόηση, σε κάθε στάδιο της ανάπτυξης.</span><span class="en">Psychological support and systemic psychotherapy offered with warmth, respect and understanding at every stage of development.</span></p>
+<a class="btn" href="#contact"><span class="el">Κλείσε δωρεάν γνωριμία</span><span class="en">Book a free consultation</span></a><a class="btn ghost" href="#about"><span class="el">Μάθε περισσότερα</span><span class="en">Learn more</span></a>
+</div></section>
+
+<section class="about" id="about"><div class="wrap grid2">
+<!-- ΦΩΤΟΓΡΑΦΙΑ / PHOTO: βάλτε αρχείο photo.jpg στον ίδιο φάκελο με το index.html -->
+<div class="photo"><img src="photo.jpg" alt="Κατερίνα Κολοβού" onerror="this.remove()"></div>
+<div>
+<p class="eyebrow"><span class="el">Σχετικά</span><span class="en">About</span></p>
+<h2><span class="el">Γεια σου, είμαι η Κατερίνα Κολοβού.</span><span class="en">Hello, I'm Katerina Kolovou.</span></h2>
+<p><span class="el">Είμαι ψυχολόγος (MSc) με εξειδίκευση στην ψυχολογία της παιδικής ανάπτυξης και στη συστημική ψυχοθεραπεία. Από το 2021 εργάζομαι με παιδιά, εφήβους και οικογένειες, και από το 2024 ως σχολική ψυχολόγος.</span><span class="en">I'm a psychologist (MSc) specialising in child development and systemic psychotherapy. Since 2021 I have worked with children, adolescents and families, and since 2024 as a school psychologist.</span></p>
+<p><span class="el">Κάθε παιδί ζει μέσα σε ένα πλαίσιο σχέσεων. Συνεργάζομαι με το παιδί και την οικογένεια, με σεβασμό στον ρυθμό τους, ώστε η θεραπεία να γίνει ένας ασφαλής χώρος για κατανόηση και αλλαγή.</span><span class="en">Every child lives within a web of relationships. I work alongside the child and the family, respecting their pace, so that therapy becomes a safe space for understanding and change.</span></p>
+</div></div></section>
+
+<section id="services"><div class="wrap">
+<p class="eyebrow"><span class="el">Πώς μπορώ να βοηθήσω</span><span class="en">How I can help</span></p>
+<h2><span class="el">Τομείς υποστήριξης</span><span class="en">Areas of support</span></h2>
+<div class="cards">
+<div class="card c1"><h3><span class="el">Παιδιά &amp; έφηβοι</span><span class="en">Children &amp; adolescents</span></h3><p><span class="el">Συναισθηματική και ψυχολογική στήριξη σε κάθε ηλικία, με έμφαση στη συναισθηματική νοημοσύνη.</span><span class="en">Emotional and psychological support at every age, with a focus on emotional intelligence.</span></p></div>
+<div class="card c2"><h3><span class="el">Οικογένεια &amp; συστημική θεραπεία</span><span class="en">Family &amp; systemic therapy</span></h3><p><span class="el">Βελτίωση της επικοινωνίας και των σχέσεων μέσα στην οικογένεια.</span><span class="en">Improving communication and relationships within the family.</span></p></div>
+<div class="card c3"><h3><span class="el">Αυτισμός &amp; ανάπτυξη</span><span class="en">Autism &amp; development</span></h3><p><span class="el">Στήριξη παιδιών στο φάσμα του αυτισμού και των οικογενειών τους.</span><span class="en">Support for children on the autism spectrum and their families.</span></p></div>
+<div class="card c4"><h3><span class="el">Ψυχολογική αξιολόγηση</span><span class="en">Psychological assessment</span></h3><p><span class="el">Κατανόηση των αναγκών του παιδιού και καθοδήγηση για τα επόμενα βήματα.</span><span class="en">Understanding the child's needs and guidance on next steps.</span></p></div>
+</div></div></section>
+
+<section class="cred" id="credentials"><div class="wrap">
+<p class="eyebrow"><span class="el">Εκπαίδευση</span><span class="en">Training</span></p>
+<h2><span class="el">Προσόντα &amp; εμπειρία</span><span class="en">Credentials &amp; experience</span></h2>
+<h3><span class="el">Σπουδές</span><span class="en">Education</span></h3><ul><li><span class="el">MSc Ψυχολογία της Παιδικής Ανάπτυξης, University of Central Lancashire (2020–2021)</span><span class="en">MSc Psychology of Child Development, University of Central Lancashire (2020–2021)</span></li><li><span class="el">BSc Ψυχολογία, Πανεπιστήμιο Κρήτης (2015–2020)</span><span class="en">BSc Psychology, University of Crete (2015–2020)</span></li><li><span class="el">Πρόγραμμα Εξειδίκευσης στη Συστημική Ψυχοθεραπεία, Society for Systems Therapy and Intervention (2020–2024)</span><span class="en">Specialization Program in Systemic Psychotherapy, Society for Systems Therapy and Intervention (2020–2024)</span></li><li><span class="el">Ετήσιο Πρόγραμμα Εξειδίκευσης στην Παιδική Ψυχολογία και την Πρακτική Ψυχικής Υγείας, Πανεπιστήμιο Αιγαίου (2020–2021)</span><span class="en">Annual Specialization Program in Child Psychology, Mental Health Practice, University of the Aegean (2020–2021)</span></li></ul>
+<h3><span class="el">Πιστοποιήσεις</span><span class="en">Certifications</span></h3><ul><li><span class="el">Συναισθηματική Νοημοσύνη και Παιδιά</span><span class="en">Emotional Intelligence and Children</span></li><li><span class="el">Παιδιά και Κλινική Έρευνα</span><span class="en">Children and Clinical Research</span></li><li><span class="el">Ειδική Αγωγή: Διεπιστημονικές Πρακτικές Σύγκλισης</span><span class="en">Special Education: Interdisciplinary Convergence Practices</span></li><li><span class="el">ICH Good Clinical Practice E6 (R2) – Εκπαίδευση Ερευνητών</span><span class="en">ICH Good Clinical Practice E6 (R2) – Investigator Site Training</span></li><li><span class="el">Διαταραχή Αυτιστικού Φάσματος: Βασικές Αρχές & Στρατηγικές Επικοινωνίας</span><span class="en">Autism Spectrum Disorder: Basic Principles &amp; Communication Strategies</span></li></ul>
+<h3><span class="el">Επαγγελματική εμπειρία</span><span class="en">Experience</span></h3><ul><li><span class="el">Σχολική Ψυχολόγος, Υπουργείο Παιδείας, Θρησκευμάτων και Αθλητισμού (από Οκτ. 2024)</span><span class="en">School Psychologist, Ministry of Education, Research and Religious Affairs (Oct 2024 – present)</span></li><li><span class="el">Ψυχολόγος – Παιδοψυχολόγος, Ομιλία, Λόγος & Γραφή (Μάιος 2021 – Ιαν. 2025)</span><span class="en">Psychologist – Child Psychologist, Omilia, Logos &amp; Grafi (May 2021 – Jan 2025)</span></li><li><span class="el">Ασκούμενη ψυχολόγος, Σύλλογος Γονέων, Κηδεμόνων και Φίλων Ατόμων με Αυτισμό, Ρέθυμνο (2019)</span><span class="en">Trainee Psychologist, Association of Parents, Guardians and Friends of People with Autism, Rethymno (2019)</span></li></ul>
+<h3><span class="el">Γλώσσες</span><span class="en">Languages</span></h3><ul><li><span class="el">Ελληνικά (μητρική), Αγγλικά</span><span class="en">Greek (native), English</span></li></ul>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<p class="eyebrow"><span class="el">Επικοινωνία</span><span class="en">Get in touch</span></p>
+<h2><span class="el">Κάνε το πρώτο βήμα</span><span class="en">Take the first step</span></h2>
+<p><span class="el">Το να ζητήσεις βοήθεια είναι συχνά το δυσκολότερο βήμα. Στείλε ένα μήνυμα ή κάλεσε, και θα κανονίσουμε μια δωρεάν γνωριμία 15 λεπτών.</span><span class="en">Reaching out is often the hardest part. Send a message or call, and we'll arrange a free 15-minute call to see if we're a good fit.</span></p>
+<!-- ΕΠΙΚΟΙΝΩΝΙΑ / CONTACT: τηλέφωνο, email, LinkedIn -->
+<a class="btn" href="tel:+306985989876">+30 698 598 9876</a><a class="btn ghost" href="mailto:kkolovou@yahoo.com">kkolovou@yahoo.com</a><a class="btn ghost" href="https://www.linkedin.com/in/katerina-kolovou-3b4606190/" target="_blank" rel="noopener">LinkedIn</a>
+<p class="info"><span class="el">Δια ζώσης συνεδρίες στην Τρίπολη Αρκαδίας.<br>Αν βρίσκεσαι σε άλλη περιοχή, γράψε μου και θα κανονίσουμε συνεδρία εξ αποστάσεως.</span><span class="en">In-person sessions in Tripoli, Arcadia.<br>If you are in another area, write to me and we'll arrange a remote session.</span></p>
+</div></section>
+</main>
+<footer><span class="el">© 2026 Κατερίνα Κολοβού. Σε περίπτωση έκτακτης ανάγκης, καλέστε το 112.</span><span class="en">© 2026 Katerina Kolovou. In an emergency, please call 112.</span></footer>
+<script>
+(function(){
+var T={el:'Κατερίνα Κολοβού · Ψυχολόγος Παιδιών & Εφήβων',en:'Katerina Kolovou · Child & Adolescent Psychologist'};
+function set(l){document.documentElement.lang=l;document.title=T[l];
+document.querySelectorAll('.lang button').forEach(function(b){b.classList.toggle('on',b.dataset.l===l)});
+try{localStorage.setItem('lang',l)}catch(e){}}
+document.querySelectorAll('.lang button').forEach(function(b){b.onclick=function(){set(b.dataset.l)}});
+var l='el';try{l=localStorage.getItem('lang')||'el'}catch(e){}
+if(l!=='el')set(l);
+})();
+</script>
+</body>
+</html>
